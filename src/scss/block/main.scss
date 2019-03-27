@@ -1,0 +1,127 @@
+.main {
+  background-color: $color-bg;
+}
+.work {
+  transform: translateY(-160px);
+  overflow: hidden;
+  &__title {
+    margin: 0 0 0 137px;
+    font-size: 190px;
+    font-family: "Rubik", sans-serif;
+    color: rgba(249, 252, 254, 0.1);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    display: block;
+    line-height: 0.8;
+  }
+  &__wrap {
+    display: flex;
+    max-width: 1920px;
+  }
+  &__box {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    .work__item {
+      height: 280px;
+      width: 100%;
+      &:first-child {
+        &::after {
+          background: url("../images/key.jpg") center no-repeat;
+          -webkit-background-size: cover;
+          background-size: cover;
+        }
+      }
+      &:last-child {
+        &::after {
+          background: url("../images/erp.jpg") center no-repeat;
+          -webkit-background-size: cover;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  &__item {
+    height: 560px;
+    position: relative;
+    text-decoration: none;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    &--kz {
+      width: 1066px;
+      &::after {
+        background: url("../images/new-smile.jpg") center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+    }
+    &--fb {
+      width: 400px;
+      &::after {
+        background: url("../images/flyboots.jpg") center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+    }
+    &:hover {
+      .work__desc {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: rgba($color-blue, 0.8);
+        border-color: rgba($color-blue, 0.8);
+        border-radius: 0;
+        .plus {
+          width: 47px;
+          height: 47px;
+        }
+        span {
+          opacity: 1;
+          visibility: visible;
+          transition-delay: .3s;
+        }
+      }
+    }
+  }
+  &__desc {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 2px solid $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    color: $color-white;
+    transition: .6s ease;
+    span {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      bottom: 45px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      //transition: opacity .6s ease, visibility .6s ease;
+      transition-delay: 0s;
+      font-family: "OpenSans", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -7,3 +7,12 @@
 @import "fonts";
 @import "vendor";
 @import "base";
+
+//components
+
+@import "functions/svg";
+
+
+// block
+@import "block/header";
+@import "block/main";

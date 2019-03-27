@@ -1,0 +1,98 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-color: $color-bg;
+  background-image: url("../images/header.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  &__box {
+    margin-top: 200px;
+  }
+  &__title {
+    color: #fcfeff;
+    font-family: "Rubik", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 5px;
+  }
+  &__desc {
+    color: #ffffff;
+    font-family: "OpenSans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+}
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 26px 0;
+  border-bottom: 1px solid rgba(#dbe4eb, 0.2);
+  &__wrap {
+    display: flex;
+    svg {
+      margin-top: 5px;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+    align-items: flex-start;
+  }
+  &__phone {
+    color: $color-white;
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.6;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: $color-white;
+      transition: width .3s;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+  &__mail {
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+    color: $color-blue;
+    font-family: "OpenSans", sans-serif;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: $color-blue;
+      transition: width .3s;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
