@@ -2,7 +2,7 @@
   background-color: $color-bg;
 }
 .work {
-  transform: translateY(-160px);
+  transform: translateY(-170px);
   overflow: hidden;
   &__title {
     margin: 0 0 0 137px;
@@ -132,6 +132,7 @@
 }
 
 .skills {
+  padding-top: 20px;
   &__title {
     color: $color-white;
     font-family: "Rubik", sans-serif;
@@ -153,15 +154,20 @@
   }
   &__slider {
     display: flex;
+    width: 70%;
+    max-width: 1250px;
+    margin: 70px auto 0;
   }
   &__item {
-    height: 160px;
+    height: 200px;
     width: 250px;
     display: flex;
     justify-content: center;
+    align-items: center;
     svg {
-      height: 100%;
+      height: 160px;
       width: 100%;
+      fill: $color-blue;
     }
   }
 }
