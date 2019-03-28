@@ -16,7 +16,7 @@ let argv = yargs.default({
 	minifyHtml: null,
 	minifyCss: null,
 	minifyJs: null,
-	minifySvg: null,
+	minifySvg: true,
 	notify: true,
 	open: true,
 	port: 3000,

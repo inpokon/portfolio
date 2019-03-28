@@ -6,7 +6,7 @@
   overflow: hidden;
   &__title {
     margin: 0 0 0 137px;
-    font-size: 190px;
+    font-size: 10.4vw;
     font-family: "Rubik", sans-serif;
     color: rgba(249, 252, 254, 0.1);
     font-weight: bold;
@@ -87,7 +87,9 @@
         span {
           opacity: 1;
           visibility: visible;
-          transition-delay: .3s;
+          left: 0;
+          transition-delay: .6s;
+          transition: .4s ease .5s;
         }
       }
     }
@@ -107,12 +109,14 @@
     border-radius: 2px;
     color: $color-white;
     transition: .6s ease;
+    overflow: hidden;
     span {
+      white-space: nowrap;
       opacity: 0;
       visibility: hidden;
       position: absolute;
       bottom: 45px;
-      left: 0;
+      left: -100%;
       width: 100%;
       text-align: center;
       //transition: opacity .6s ease, visibility .6s ease;
@@ -122,6 +126,42 @@
       font-weight: 600;
       line-height: 21px;
       text-transform: uppercase;
+      transition: 0 ease;
+    }
+  }
+}
+
+.skills {
+  &__title {
+    color: $color-white;
+    font-family: "Rubik", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 26.59px;
+    text-transform: uppercase;
+    letter-spacing: 2.57px;
+    text-align: center;
+    margin: 0;
+  }
+  &__desc {
+    color: #abbcc8;
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+  }
+  &__slider {
+    display: flex;
+  }
+  &__item {
+    height: 160px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    svg {
+      height: 100%;
+      width: 100%;
     }
   }
 }
