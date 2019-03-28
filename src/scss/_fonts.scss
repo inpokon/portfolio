@@ -1,0 +1,23 @@
+// stylelint-disable no-empty-source
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/open/OpenSans.woff2') format('woff2'),
+  url('../fonts/open/OpenSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/rubik/Rubik-Black.woff2') format('woff2'),
+  url('../fonts/rubik/Rubik-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/open/OpenSans-Semibold.woff2') format('woff2'),
+  url('../fonts/open/OpenSans-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
